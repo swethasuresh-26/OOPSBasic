@@ -12,5 +12,13 @@ public class Main {
         boolean accntBalance = abiSavings.isAccountBalMin();
         System.out.println("The balance is Minimum " + " " + accntBalance);
 
+        BankAccount bublooSavings=new BankAccount();
+        bublooSavings.accountNumber="HDFC002SV";
+        bublooSavings.accountHolder="Dhikshit";
+        bublooSavings.accountBalance=10000;
+
+        System.out.println(bublooSavings.getAccountHolder()+" "+bublooSavings.getAccountNumber()+" ");
+        System.out.println("The balance is Minimum " + " " + bublooSavings.isAccountBalMin());
+
     }
 }
