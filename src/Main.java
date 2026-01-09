@@ -17,5 +17,11 @@ public class Main {
         System.out.println(bublooSavings.getAccountHolder()+" "+bublooSavings.getAccountNumber()+" ");
         System.out.println("The balance is Minimum " + " " + bublooSavings.isAccountBalMin());
 
+        Student st=new Student(1,"Dhruv",100,01);
+        Student st1=new Student(st);
+
+        //Pass By Reference
+        DemoClass demo=new DemoClass();
+        demo.showMarks(st);
     }
 }
