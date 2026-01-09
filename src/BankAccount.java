@@ -3,6 +3,17 @@ public class BankAccount {
     int accountBalance;
     String accountHolder;
 
+    public  BankAccount()
+    {
+
+    }
+    public BankAccount(String accountNumber,int accountBalance,String accountHolder)
+    {
+        this.accountNumber=accountNumber;
+        this.accountBalance=accountBalance;
+        this.accountHolder=accountHolder;
+        //Default constructor
+    }
     int getAccountBalance()
     {
         return accountBalance;
@@ -25,4 +36,11 @@ public class BankAccount {
         else
             return false;
     }
+
+    void printDetails()
+    {
+        System.out.println(this.accountHolder+" "+this.accountNumber+" "+this.accountBalance);
+    }
 }
+
+

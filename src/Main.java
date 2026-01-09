@@ -3,12 +3,9 @@
 
 public class Main {
     public static void main(String args[]) {
-        BankAccount abiSavings = new BankAccount();
-        abiSavings.accountNumber = "SBI001SV";
-        abiSavings.accountHolder = "Abhi";
-        abiSavings.accountBalance = 50000;
-
-        System.out.println(abiSavings.getAccountHolder() + " " + abiSavings.getAccountBalance());
+        BankAccount abiSavings = new BankAccount("SBI001SV",5000,"Abhi");
+       // System.out.println(abiSavings.getAccountHolder() + " " + abiSavings.getAccountBalance());
+       abiSavings.printDetails();
         boolean accntBalance = abiSavings.isAccountBalMin();
         System.out.println("The balance is Minimum " + " " + accntBalance);
 
