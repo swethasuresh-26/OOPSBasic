@@ -5,6 +5,6 @@ public class ICECar extends Car{
 
     public ICECar()
     {
-        System.out.println("Executing ICECar constructor");
+        System.out.println("Executing ICECar constructor child class");
     }
 }
