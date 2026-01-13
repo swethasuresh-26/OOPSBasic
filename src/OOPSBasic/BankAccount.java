@@ -1,3 +1,5 @@
+package OOPSBasic;
+
 public class BankAccount {
     String accountNumber;
     int accountBalance;

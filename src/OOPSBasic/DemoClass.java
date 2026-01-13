@@ -1,3 +1,5 @@
+package OOPSBasic;
+
 public class DemoClass {
 
     public void showMarks(Student st)
