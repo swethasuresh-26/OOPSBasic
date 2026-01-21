@@ -1,10 +1,16 @@
 package ConcurrencyExample;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Main {
     static void main(String[] args) {
         Count count=new Count();
-        AdderThread add=new AdderThread(count);
-        SubtractorThread sub=new SubtractorThread(count);
+
+        //We are using the same mutex Object for both the threads
+        ReentrantLock mutex=new ReentrantLock();
+
+        AdderThread add=new AdderThread(count,mutex);
+        SubtractorThread sub=new SubtractorThread(count,mutex);
 
         Thread t1=new Thread(add);
         Thread t2=new Thread(sub);
