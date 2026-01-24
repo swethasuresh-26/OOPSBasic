@@ -10,7 +10,7 @@ public class Withdrawer implements Runnable{
 
     @Override
     public void run() {
-        for(int i=0;i<100;i++)
-            account.withdraw((long)i);
+        for(int j=0;j<100;j++)
+            account.withdraw((long)j);
     }
 }
