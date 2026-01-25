@@ -11,12 +11,23 @@ public class BankAccount {
 
             this.balance=balance;
     }
-    public void deposit(Long amount){
+    public synchronized void deposit(Long amount){
         if(amount>=0)
             this.balance+=amount;
     }
-    public void withdraw(Long amount){
-        if(amount>0 && this.balance>amount)
+    public synchronized void withdrawWithMethod(Long amount){
+        if(amount>0 && this.balance>=amount)
             this.balance-=amount;
     }
+    public  void withdrawWithBlock(Long amount){
+        if(amount>0 && this.balance>=amount)
+        {
+            synchronized (this){
+                this.balance-=amount;
+            }
+        }
+    }
+
 }
+//Sync With Method blocks the entire Method
+//Sync with Block blocks only a particular Part

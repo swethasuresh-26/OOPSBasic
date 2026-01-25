@@ -11,6 +11,7 @@ public class Withdrawer implements Runnable{
     @Override
     public void run() {
         for(int j=0;j<100;j++)
-            account.withdraw((long)j);
+            account.withdrawWithMethod((long)j);
+        System.out.println("Withdraw Succeess");
     }
 }

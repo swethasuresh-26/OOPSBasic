@@ -17,5 +17,6 @@ public class Depositor implements Runnable{
         {
             account.deposit((long)i);
         }
+        System.out.println("Deposit Success");
     }
 }
