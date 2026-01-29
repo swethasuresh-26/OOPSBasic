@@ -7,5 +7,9 @@ public class Main {
 
         Pair<Integer,Boolean> intBoolPair=new Pair<>();
         intBoolPair.print(25,true);
+
+        Car car=new Car("Ford","Mustang");
+        Pair<Car,Double> carPrice=new Pair<>();
+        carPrice.print(car,110124.02);
     }
 }
